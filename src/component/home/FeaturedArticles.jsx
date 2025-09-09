@@ -1,9 +1,11 @@
-import React from "react";
+"use client";
+import React from 'react';
 import { motion } from "framer-motion";
-import { FaRobot, FaRegNewspaper } from "react-icons/fa";
+import { FaRegNewspaper, FaRobot } from 'react-icons/fa';
 
-// Example data (replace with API/DB)
-const articles = [
+const FeaturedArticles = () => {
+
+    const articles = [
   {
     id: 1,
     title: "AI Reshaping Global Economy",
@@ -30,8 +32,7 @@ const articles = [
   },
 ];
 
-export default function FeaturedArticles() {
-  return (
+    return (
     <section className="py-16 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-950">
       <div className="max-w-7xl mx-auto px-6 text-center">
         {/* Section Header */}
@@ -93,5 +94,7 @@ export default function FeaturedArticles() {
         </div>
       </div>
     </section>
-  );
-}
+    );
+};
+
+export default FeaturedArticles;
